@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #63a585;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Sudoku board container */
+#sudoku-board {
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the table */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Table cell styling */
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Input fields in the Sudoku grid */
+input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+/* On hover, change the border color */
+input:hover {
+    border-color: #053906;
+}
+
+/* Styling for the 'Solve Sudoku' button */
+button {
+    padding: 15px 30px;
+    background-color: #1ce34492;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Button: Disabled styling */
+button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+/* Styling for alert (no solution) messages */
+.alert {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Add a responsive design for smaller screens */
+@media (max-width: 600px) {
+    input {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
